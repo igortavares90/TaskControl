@@ -1,5 +1,4 @@
-﻿using TaskControl.Domain.Commands.Project;
-using TaskControl.Domain.Commands.Task;
+﻿using TaskControl.Domain.Commands.Task;
 
 namespace TaskControl.Domain.Interfaces.Service
 {
@@ -12,5 +11,6 @@ namespace TaskControl.Domain.Interfaces.Service
         bool TaskExists(int taskId);
         int GetCountOfProjectTasks(int projectId);
         int GetPendingTaskCount(int projectId);
+        List<GetTaskPerformanceReportCommandResult> GetPerformanceReport();
     }
 }

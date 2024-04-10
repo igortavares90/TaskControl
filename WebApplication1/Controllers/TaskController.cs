@@ -109,5 +109,27 @@ namespace TaskControl.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
+        [HttpGet]
+        [Route("PerformanceReport")]
+        [ProducesResponseType(typeof(void), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ProjectCommandQueryResult), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(void), StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<ProjectCommandQueryResult>> PerformanceReport()
+        {
+            try
+            {
+                var result = _taskService.GetPerformanceReport();
+
+                if (result.Count > 0)
+                    return new OkObjectResult(result);
+                else
+                    return new NotFoundObjectResult("Dados insuficientes para geração do relatório!");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
     }
 }

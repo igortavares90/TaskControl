@@ -11,5 +11,6 @@ namespace TaskControl.Domain.Interfaces.Repository
         bool TaskExists(int taskId);
         int GetCountOfProjectTasks(int projectId);
         int GetPendingTaskCount(int projectId);
+        List<GetTaskPerformanceReportCommandResult> GetPerformanceReport();
     }
 }

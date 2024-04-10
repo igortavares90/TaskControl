@@ -98,5 +98,10 @@ namespace TaskControl.Application.Services
         {
             return _taskRepository.TaskExists(taskId);
         }
+
+        public List<GetTaskPerformanceReportCommandResult> GetPerformanceReport()
+        {
+            return _taskRepository.GetPerformanceReport();
+        }
     }
 }
