@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskControl", "WebApplication1\TaskControl.csproj", "{9A14566D-13B3-4D4D-8629-C9BDDA7D7139}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskControl.Domain", "TaskControl.Domain\TaskControl.Domain.csproj", "{C9AF3ECC-258B-4163-85CA-43F608F99083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskControl.Domain", "TaskControl.Service\TaskControl.Domain.csproj", "{C9AF3ECC-258B-4163-85CA-43F608F99083}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskControl.Infrastructure", "TaskControl.Infrastructure\TaskControl.Infrastructure.csproj", "{30A2C75C-C92A-4FDB-8C7B-DCF4FFB0AEAD}"
 EndProject
