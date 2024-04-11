@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Data\DataContext\" />
-    <Folder Include="SQL\" />
   </ItemGroup>
 
   <ItemGroup>
